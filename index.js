@@ -3,8 +3,7 @@ module.exports = {
         var nodemailer = require('nodemailer');
         var ses = require('nodemailer-ses-transport');
         var moment = require('moment');
-        process.on('uncaughtException', function (error) {
-            console.log(error.stack);
+        process.on('uncaughtException', function (error) {            
             var transporter = nodemailer.createTransport(ses({
                 accessKeyId: AWS_ACCESS_KEY,
                 secretAccessKey: AWS_SECRET_KEY
@@ -16,7 +15,7 @@ module.exports = {
                 html: error.stack
             };
             transporter.sendMail(mailOptions, function (err, info) {
-                process.exit(0);
+                process.exit(1);
             });
         });
     }
