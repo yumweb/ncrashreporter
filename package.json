@@ -1,6 +1,6 @@
 {
   "name": "ncrashreporter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dump node context into a file on process crash, send it by mail",
   "scripts": {
     "test": "mocha -R spec"
