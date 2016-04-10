@@ -1,3 +1,5 @@
+#WARNING: This project is a work in progress. Please do not use this in production
+
 ncrashreporter
 ==============
 
