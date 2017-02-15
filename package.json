@@ -1,7 +1,7 @@
 {
   "name": "ncrashreporter",
-  "version": "0.0.2",
-  "description": "Dump node context into a file on process crash, send it by mail",
+  "version": "0.0.3",
+  "description": "Dump node context into a file on process crash, send it by mail using Postmark",
   "scripts": {
     "test": "mocha -R spec"
   },
@@ -20,8 +20,7 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies" : {
-    "nodemailer": "2.3.0",
-    "nodemailer-ses-transport": "1.3.0",
+    "postmark": "1.3.1",
     "moment": "2.12.0"
   },
    "devDependencies" : {    

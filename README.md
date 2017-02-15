@@ -3,7 +3,7 @@
 ncrashreporter
 ==============
 
-Crash Reporter for Nodejs
+Crash Reporter for Nodejs. Sends an email when the app is crashed via Postmark (https://postmarkapp.com/)
 
 ## Installing crashreporter
 
@@ -14,5 +14,10 @@ Crash Reporter for Nodejs
 ## Usage
 ### Basic
 ```javascript
-require('ncrashreporter').GetCrashReport();
+var opts = {
+    pmKey: 'POSTMARK_API_KEY',
+    mailFrom: 'mailfrom@example.com',
+    mailTo: 'mailto@example.com'
+}
+require('ncrashreporter').GetCrashReport(opts);
 ```
